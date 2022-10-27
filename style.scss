@@ -7,6 +7,43 @@
   font-family: "Poppins", sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.gap-y-4 {
+  gap: 1rem;
+}
+.gap-x-5 {
+  gap: 1.25rem;
+}
+.mt-7 {
+  margin-top: 1.75rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+// .mx-auto{
+//   margin: 0 auto;
+// }
+
 .containerr {
   min-height: 100vh;
   background: url(./images/bg-desktop.svg);
@@ -38,6 +75,7 @@ nav img {
 }
 
 .left {
+  flex-basis: 50%;
   img {
     height: 100%;
     width: 100%;
@@ -47,6 +85,8 @@ nav img {
 
 .right {
   //   padding: 0 5rem;
+  flex-basis: 33.333333%;
+  margin: 0 auto;
   .Register {
     color: hsl(300, 69%, 71%);
     background-color: white;
@@ -57,6 +97,16 @@ nav img {
       color: white;
       background-color: hsl(300, 69%, 71%);
     }
+  }
+  h1 {
+    color: #f3f4f6;
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+  }
+  p {
+    color: #d1d5db;
   }
   @media only screen and(max-width: 800px) {
     display: flex;
@@ -99,6 +149,64 @@ nav img {
   }
 }
 
-.two{
-    height: 100vh;
+.two {
+  height: 100vh;
+}
+
+// Fixes
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body {
+  margin: 0;
+  line-height: inherit;
+}
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+[role=button], button {
+  cursor: pointer;
+}
+[type=button], [type=reset], [type=submit], button {
+  appearance: button;
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+button, select {
+  text-transform: none;
+}
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
 }
